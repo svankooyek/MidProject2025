@@ -9,46 +9,253 @@
     <script src="./index.js"></script>
 
 </head>
-<body>
-    <nav>
-        <img class = "logo" src="./images/logos/circle.svg" alt="Circle">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-        </ul>
-        <button>Contact Us</button>
+<header class="header">
+    <nav class="nav-container">
+      <a href="/" class="logo">
+        <img
+          src="./images/logos/circle.svg"
+          alt="Circle logo"
+          class="logo-image"
+        />
+      </a>
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/projects" class="nav-link">Projects</a></li>
+        <li><a href="/services" class="nav-link">Services</a></li>
+      </ul>
+      <button class="btn btn-primary nav-contact">Contact Us</button>
     </nav>
-
-    <div class="content">
-        <h1>Empower Your Business With Stunning Design!</h1>
-        <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-        <div class="buttons">
-            <a href="#">Get in touch</a>
-            <a href="#">See our work</a>
-            <div style="text-align: center; margin-top: 20px;">
-                <img src="./images/hero-section/card-2.png" alt="Project has been accepted">
+  </header>
+  
+  <main class="main">
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Empower Your Business With Stunning Design!
+            </h1>
+            <p class="hero-description">
+              Circle is a digital design and development studio. We design and
+              develop astonishing websites and mobile apps.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary">Get in touch</button>
+              <button class="btn btn-text">See our work</button>
             </div>
-        
-            <div style="text-align: center; margin-top: 20px;">
-                <img src="./images/hero-section/hero-image.png" alt="hero">
-            </div>
-        
-            <div style="text-align: center; margin-top: 20px;">
-                <img src="./images/hero-section/card-1.png" alt="Choose your card">
-            </div>
+          </div>
         </div>
-        
-    </div>
-
-    <div class="brands">
-        <img src="./images/logos/airbnb-logo.svg" alt="Airbnb">
-        <img src="./images/logos/google-logo.svg" alt="Google">
-        <img src="./images/logos/microsoft-logo.svg" alt="Microsoft">
-        <img src="./images/logos/fedex-logo.svg" alt="FedEx">
-        <img src="./images/logos/amazon-logo.svg" alt="Amazon">
-    </div>
-
-
-</body>
+        <div class="hero-image">
+          <img
+            src="./images/hero-section/hero-image.png"
+            alt="Hero illustration"
+            class="hero-illustration"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <section class="clients">
+    <div class="clients-container">
+        <img src="./images/logos/airbnb-logo.svg" alt="airbnb" class="logo-image" />
+        <img src="./images/logos/google-logo.svg" alt="google" class="logo-image" />
+        <img src="./images/logos/microsoft-logo.svg" alt="microsoft" class="logo-image" />
+        <img src="./images/logos/fedex-logo.svg" alt="fedex" class="logo-image" />
+        <img src="./images/logos/amazon-logo.svg" alt="amazon" class="logo-image" />
+      </div>
+    </section>
+  
+    <section class="projects">
+      <h2 class="section-title">Recent Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img
+            src="./images/projects-section/1.jpg"
+            alt="Simplify project"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Simplify</h3>
+            <p class="project-description">UI Design & App Development</p>
+            <a href="#" class="project-link">Learn more</a>
+          </div>
+        </article>
+  
+        <article class="project-card">
+          <img
+            src="./images/projects-section/2.jpg"
+            alt="Dashcoin project"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Dashcoin</h3>
+            <p class="project-description">Web Development</p>
+            <a href="#" class="project-link">Learn more</a>
+          </div>
+        </article>
+  
+        <article class="project-card">
+          <img
+            src="./images/projects-section/3.jpg"
+            alt="Vectorify project"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Vectorify</h3>
+            <p class="project-description">User Experience Design</p>
+            <a href="#" class="project-link">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  
+    <section class="testimonials">
+      <div class="testimonials-container">
+        <img
+          src="./images/testimonial-section/orbit.png"
+          alt="Background pattern"
+          class="testimonials-bg"
+        />
+        <div class="testimonials-content">
+          <div class="testimonials-header">
+            <img
+              src="./images/testimonial-section/memoji-1.png"
+              alt="Decoration"
+              class="testimonials-decoration"
+            />
+            <h2 class="testimonials-title">Hear What Our Clients Have to Say</h2>
+            <img
+              src="./images/testimonial-section/memoji-2.png"
+              alt="Decoration"
+              class="testimonials-decoration"
+            />
+          </div>
+          <blockquote class="testimonial-quote">
+            "Circle helped us through every stage of our startup. We really
+            enjoyed working with you."
+          </blockquote>
+          <div class="testimonial-author">
+            <img
+              src="./images/testimonial-section/memoji-3.png"
+              alt="Left decoration"
+              class="author-decoration"
+            />
+            <div class="author-info">
+              <img
+                src="./images/testimonial-section/profile.png"
+                alt="Kristin Watson"
+                class="author-image"
+              />
+              <div class="author-details">
+                <span class="author-name">Kristin Watson</span>
+                <span class="author-company">Booking.com</span>
+              </div>
+            </div>
+            <img
+              src="./images/testimonial-section/memoji-4.png"
+              alt="Right decoration"
+              class="author-decoration"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <img
+            src="./images/services-section/icons/1.svg""
+            alt="UI Design icon"
+            class="service-icon"
+          />
+          <h3 class="service-title">User Interface Design</h3>
+          <p class="service-description">
+            Circle provides you with a stunning user interface design that is
+            accessible to everyone.
+          </p>
+          <a href="#" class="service-link">Learn more</a>
+        </article>
+  
+        <article class="service-card">
+          <img
+            src="./images/services-section/icons/2.svg""
+            alt="UX Design icon"
+            class="service-icon"
+          />
+          <h3 class="service-title">User Experience Design</h3>
+          <p class="service-description">
+            Circle always focuses on delivering the best user experience to your
+            customers.
+          </p>
+          <a href="#" class="service-link">Learn more</a>
+        </article>
+  
+        <article class="service-card">
+          <img
+            src="./images/services-section/icons/3.svg""
+            alt="App Development icon"
+            class="service-icon"
+          />
+          <h3 class="service-title">Application Development</h3>
+          <p class="service-description">
+            We develop high-quality mobile and web applications using the latest
+            technology stack.
+          </p>
+          <a href="#" class="service-link">Learn more</a>
+        </article>
+      </div>
+    </section>
+  
+    <section class="cta">
+      <div class="cta-container">
+        <h2 class="cta-title">Do you have any questions?</h2>
+        <p class="cta-subtitle">Let us help you!</p>
+        <form class="subscribe-form">
+          <div class="input-group">
+            <img
+              src="./images/newsletter/icon/mail.svg"
+              alt="Email icon"
+              class="input-icon"
+            />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="subscribe-input"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  
+    <footer class="footer">
+        <div class="footer-brand">
+            <img
+              src="./images/logos/circle.svg"
+              alt="Circle Logo"
+              class="footer-logo"
+            />
+          </div>
+      <address class="footer-address">
+        2972 Westheimer Rd. Santa Ana, Illinois 85486
+      </address>
+      <nav class="footer-nav">
+        <div class="footer-links">
+          <a href="#">Team</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </nav>
+    </footer>
+  </main>
+  
 </html>
