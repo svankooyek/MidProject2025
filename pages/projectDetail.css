@@ -285,169 +285,72 @@ body {
   }
   
   /* Footer styles */
-.footer {
-  margin-top: 140px;
-  width: 100%;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 80px;
-}
-
-.company-info {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.footer-logo {
-  color: #0037ff;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.company-address {
-  color: #6b7280;
-  font-style: normal;
-}
-
-.footer-links {
-  display: flex;
-  gap: 120px;
-}
-
-.footer-column {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer-heading {
-  color: #374151;
-  font-weight: 500;
-  font-size: 16px;
-  margin: 0;
-}
-
-.footer-link {
-  color: #6b7280;
-  text-decoration: none;
-}
-
-/* Responsive styles */
-@media (max-width: 991px) {
-  .header {
-    padding-left: 40px;
-    padding-right: 40px;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
   }
-
-  .main-content {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .footer-content {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .footer-links {
-    gap: 60px;
-  }
-}
-
-@media (max-width: 640px) {
-  .header {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .main-nav {
-    display: none;
-  }
-
-  .mobile-menu-toggle {
-    display: block;
-  }
-
-  .main-content {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .contact-title {
-    font-size: 36px;
-  }
-
-  .form-row {
+  
+  .brand-section {
+    display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
   }
-
-  .footer-content {
-    padding-left: 20px;
-    padding-right: 20px;
-    flex-direction: column;
+  
+  .brand-name {
+    height: 24px;
+    width: auto;
+    margin: 0;
+    align-self: flex-start;
+  }
+  
+  .address {
+    font-size: 16px;
+    color: #64748b;
+    font-style: normal;
+  }
+  
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 40px;
   }
-
-  .footer-links {
+  
+  .nav-group {
+    display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
-}
-
+  
+  .nav-link {
+    font-size: 16px;
+    color: #64748b;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
   
   @media (max-width: 991px) {
-    .project-page {
-      padding: 85px 20px;
+    .footer {
+      padding-left: 40px;
+      padding-right: 40px;
     }
+  }
   
-    .navigation {
-      margin-right: 10px;
-    }
-  
-    .project-hero {
-      margin-top: 40px;
-    }
-  
-    .project-title {
-      font-size: 40px;
-    }
-  
-    .completion-date {
-      margin-top: 40px;
-    }
-  
-    .hero-image {
-      margin-top: 40px;
-    }
-  
-    .project-description {
-      margin-top: 40px;
-    }
-  
-    .other-projects {
-      margin-top: 40px;
-    }
-  
-    .projects-grid {
+  @media (max-width: 640px) {
+    .footer {
+      padding: 20px;
       flex-direction: column;
+      gap: 24px;
     }
   
-    .project-card {
-      margin-top: 40px;
+    .footer-nav {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-  
-    .newsletter {
-      margin-top: 40px;
-      padding: 100px 20px;
-    }
-  
-    .newsletter-form {
-      flex-direction: column;
-    }
+  }
   
